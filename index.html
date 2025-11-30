@@ -36,6 +36,19 @@
             border-radius: 8px;
             margin: 20px 0;
         }
+        .deletion-section {
+            background: #fef3c7;
+            padding: 15px;
+            border-left: 4px solid #f59e0b;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        .step-list {
+            background: #f9fafb;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 15px 0;
+        }
     </style>
 </head>
 <body>
@@ -45,10 +58,11 @@
     <h2>1. Information We Collect</h2>
     <p>Cikgu Homework collects limited information to provide our homework assistance service:</p>
     <ul>
-        <li>Email address for account creation</li>
+        <li>Email address for account creation and authentication</li>
         <li>Child's school year level (1-6) for age-appropriate explanations</li>
         <li>Homework images you upload for processing</li>
         <li>App usage analytics to improve our service</li>
+        <li>User ID for account identification</li>
     </ul>
 
     <h2>2. How We Use Your Information</h2>
@@ -58,51 +72,89 @@
         <li>Personalize explanations based on your child's year level</li>
         <li>Provide customer support and service improvements</li>
         <li>Process subscription payments securely</li>
+        <li>Improve app performance and user experience</li>
     </ul>
 
     <h2>3. Data Security</h2>
     <p>We implement industry-standard security measures including:</p>
     <ul>
-        <li>Encryption of all data in transit and at rest</li>
+        <li>Encryption of all data in transit (SSL/TLS) and at rest</li>
         <li>Secure authentication via Firebase</li>
         <li>Regular security updates and monitoring</li>
-        <li>Limited data retention - images are processed and deleted</li>
+        <li>Limited data retention - homework images are processed and automatically deleted</li>
+        <li>No sharing of personal data with third parties without consent</li>
     </ul>
 
     <h2>4. Third-Party Services</h2>
     <p>We use these trusted services to provide our functionality:</p>
     <ul>
-        <li>Google Firebase (authentication & database)</li>
-        <li>Google Gemini AI (homework explanations)</li>
-        <li>Google ML Kit (text recognition from images)</li>
-        <li>Payment processors (Google Play, Touch 'n Go)</li>
+        <li><strong>Google Firebase</strong> - authentication, database, and storage</li>
+        <li><strong>Google Gemini AI</strong> - homework explanations and teaching guides</li>
+        <li><strong>Google ML Kit</strong> - text recognition from homework images</li>
+        <li><strong>Google Play Billing</strong> - secure subscription and in-app purchases</li>
+        <li><strong>Touch 'n Go eWallet</strong> - alternative payment processing</li>
     </ul>
 
     <h2>5. Children's Privacy</h2>
     <p>Cikgu Homework is designed for parents, not children:</p>
     <ul>
-        <li>We do not knowingly collect data from children under 13</li>
-        <li>The app is intended for parent use to help their children</li>
-        <li>Parents maintain control over all account information</li>
+        <li>We do not knowingly collect personal data from children under 13</li>
+        <li>The app is intended for parent use to help their children with homework</li>
+        <li>Parents maintain full control over all account information</li>
+        <li>Child year level data is used only for age-appropriate explanations</li>
     </ul>
 
     <h2>6. Your Rights</h2>
     <p>You have the right to:</p>
     <ul>
-        <li>Access and update your personal information</li>
-        <li>Delete your account and associated data</li>
+        <li>Access and update your personal information at any time</li>
+        <li>Delete your account and all associated data</li>
         <li>Opt-out of non-essential communications</li>
         <li>Export your data upon request</li>
+        <li>Request information about how your data is being used</li>
+    </ul>
+
+    <h2 id="deletion">7. Account and Data Deletion</h2>
+    <div class="deletion-section">
+        <p><strong>To delete your account and all associated data:</strong></p>
+        <div class="step-list">
+            <ol>
+                <li>Send an email to: <strong>support@cikguhomework.com</strong></li>
+                <li>Subject line: <strong>"Delete My Account"</strong></li>
+                <li>Include your registered email address in the message</li>
+                <li>We will process your request within 7 business days</li>
+            </ol>
+        </div>
+    </div>
+
+    <h3>What Data Will Be Deleted:</h3>
+    <ul>
+        <li>✅ User account information</li>
+        <li>✅ Child profile data</li>
+        <li>✅ Homework history and explanations</li>
+        <li>✅ All personally identifiable information</li>
+    </ul>
+
+    <h3>Data Retention:</h3>
+    <ul>
+        <li>Payment records are retained for 7 years per Malaysian tax requirements</li>
+        <li>Google Play requires Google to retain some transaction data</li>
+        <li>All other personal data will be permanently deleted</li>
     </ul>
 
     <div class="contact-info">
-        <h2>7. Contact Us</h2>
-        <p>For privacy-related questions or data deletion requests:</p>
-        <p>Email: <strong>support@cikguhomework.com</strong></p>
+        <h2>8. Contact Us</h2>
+        <p>For privacy-related questions, data deletion requests, or concerns:</p>
+        <p><strong>Email:</strong> support@cikguhomework.com</p>
+        <p><strong>Support Hours:</strong> 8:00 AM - 8:00 PM MYT (Malaysian Time)</p>
         <p>We typically respond within 24-48 hours.</p>
     </div>
 
+    <h2>9. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time. We will notify users of any significant changes via email or through the app. Your continued use of Cikgu Homework after changes constitutes acceptance of the updated policy.</p>
+
     <hr>
     <p><small>Cikgu Homework - "Bantuan Kerja Sekolah oleh Cikgu Anda"</small></p>
+    <p><small>Made with ❤️ for Malaysian Parents and Families</small></p>
 </body>
 </html>
